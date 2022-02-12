@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>University Project</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a><!--adding relative path-->
+			<div class="nav-links" id="navlinks" >
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME </a></li>
+						<li><a href="">ABOUT US </a></li>
+							<li><a href="">COURSE</a></li>
+								<li><a href="">BLOG</a></li>
+									<li><a href="">CONTACT</a></li>
+				</ul>
+				<i class="fa fa-bars" onclick="ShowMenu()"></i>
+		</nav>
+		<div class="text-box">
+			<h1 style="text-decoration: none;">Worlds Biggest University</h1>
+			<p>Making A website is very easy. You just need to have the idea of HTML, CSS<br> & JS and you are good to go. </p>
+			<a href="" class="btn">Visit Us To Know More</a>
+		</div>
+	</section>
+	<!---COURSE--->
+	<section class="course">
+		<h1>Courses We Offer</h1>
+		<p>Courses offered are Entrepreneurship,Pure Mathematics <br>and Statistics,Business Administration and Sales,<br>Engineering,Clinical Psychology and related courses,Finance,Law.</p>
+		<div class="row">
+			<div class="course-col">
+				<h3>Intermediate</h3>
+				<p>Intermediate Accounting I provides an in-depth study of the conceptual framework of accounting as it relates to recording, reporting.</p>
+			</div>
+			<div class="course-col">
+				<h3>Degree</h3>
+				<p>A course description is a short, pithy statement which informs a student about the subject matter, approach, breadth, and applicability of the course. focuses on content structure.</p>
+			</div>
+			<div class="course-col">
+				<h3>Post-Graduation</h3>
+				<p>The organization and structure of postgraduate education varies in different countries, as well as in different institutions within countries.</p>
+			</div>
+		</div>
+	</section>
+	<!---CAMPUS-->
+	<section class="campus">
+		<h1>Our Global Campus</h1>
+		<p>Global Campus is Nord Anglia's exclusive online learning platform, where students from our schools around the world learn and develop their problem-solving and creative thinking skills.</p>
+		<div class="row">
+			<div class="camp-col">
+				<img src="images/london.png">
+				<div class="layer">
+					<h3>LONDON</h3>
+				</div>
+			</div>
+			<div class="camp-col">
+				<img src="images/newyork.png">
+				<div class="layer">
+					<h3>NEW YORK</h3>
+				</div>
+			</div>
+			<div class="camp-col">
+				<img src="images/washington.png">
+				<div class="layer"><!--plays an important role-->
+					<h3>WASHINGTON</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--FACILITIES-->
+	<section class="facilities">
+		<h1>Our Facilties</h1>
+		<p>A spacious library brimming with resources, PCs and private and group study spaces. <br>A well-equipped sports centre. An arts centre with a rich and varied programme of events. </p>
+		<div class="row">
+			<div class="fac-col">
+				<img src="images/library.png">
+					<h3>World Class Library</h3><!--no layer div in this code-->
+					<p> A library is a collection of materials, books or media that are easily accessible for use and not just for display purposes.</p>
+				</div>
+			<div class="fac-col">
+				<img src="images/basketball.png">
+					<h3>Largest Play Ground</h3>
+					<p>Modern playgrounds often have recreational equipment such as the seesaw, merry-go-round, swingset, slide, jungle gym.</p>
+				</div>
+			<div class="fac-col">
+				<img src="images/cafeteria.png">
+					<h3>Tasty and Healthy Food</h3>
+					<p>Cafeteria, self-service restaurant in which customers select various dishes from an open-counter display </p>
+				</div>
+		</div>
+	</section>
+	<!--Testimonials-->
+	<section class="testimonials">
+		<h1>Feedback Of Our Students</h1>
+		<p>I am glad to provide you with my feedback about the college. My overall experience to date has been amazing, <br>and the college is having an amazing infrastructure. </p>
+		<div class="row">
+			<div class="test-col">
+				<img src="images/user1.jpg"><!--images are huge, fiest image then text then rating-->
+				<div>
+					<p>Your college has provided me with a number of opportunities to grow and explore my skills. The emphasis on sports along with education always helped me a lot.</p>
+					<h3>Christine Berkley</h3>
+					<!--
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-o"></i>
+				-->
+				</div>
+			</div>
+			<div class="test-col">
+				<img src="images/user2.jpg">
+				<div>
+					<p>It was totally amazing to be in his class, to feel the Super High-Energy and to be inspired by his brilliant work. The knowledge he shares is an eye-opener for me and for all other teachers.</p>
+					<h3>David Byer</h3>
+					<!---
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--CONTACT US-->
+	<section class="contact">
+		<h1>Enroll For Our Various Online Courses</h1>
+		<a href="" class="bttn">CONTACT US</a>
+	</section>
+	<script>
+
+		var navlinks=document.getElementById("navlinks");
+		function showMenu(){
+			navlinks.style.right="0";
+		}
+		function hideMenu(){
+			navlinks.style.right="-200px";
+		}
+	</script>
+	<!--PROJECT-COMPLETE-->
+</body>
+</html>
